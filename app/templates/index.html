@@ -1,0 +1,22 @@
+{% import 'macros.html' as macro%}
+<html lang="en">
+<head>    <title>News Home</title> </head>
+    <body>
+    <div style="display:block">
+            <div id="us">
+                 <h3>United States</h3>   {{ macro.displayHeadlines(us_headlines)}}
+            </div>
+            <div id="uk" style="float:left">
+                <h3>United Kingdom</h3>   {{ macro.displayHeadlines(uk_headlines)}}
+            </div>
+             <div id="gr" style="float:left">
+                <h3>Germany</h3>     {{ macro.displayHeadlines(german_headlines)}}
+              </div>
+             <div id="rs" style="float:left">
+                <h3>Russia</h3> {{ macro.displayHeadlines(russia_headlines)}}
+             </div>
+    </div>
+    </body>
+
+</html>
+

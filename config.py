@@ -1,6 +1,8 @@
 class Config:
-    NEWS_API_BASE_URL='https://newsapi.org/v2/top-headlines?country={}&apiKey={}'
-    NEWS_API_KEY = '3a33361e0e2d42cda7b68efdbdeb1ff6'
+    NEWS_HEADLINES_URL = 'https://newsapi.org/v2/top-headlines?country={}&apiKey={}'
+    NEWS_API_KEY = 'f2888d530ffa4d9cb5ad1a5f9577bdff'
+    NEWS_SOURCES_URL = 'https://newsapi.org/v2/top-headlines/sources?category={}&language={}&apiKey={}'
+
 
 class ProdConfig(Config):
     pass
@@ -9,7 +11,8 @@ class ProdConfig(Config):
 class DevConfig(Config):
     DEBUG = True
 
+
 config_options = {
-'development':DevConfig,
-'production':ProdConfig
+    'development': DevConfig,
+    'production': ProdConfig
 }
