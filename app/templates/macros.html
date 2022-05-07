@@ -3,14 +3,14 @@
 
               <div class="row" style="display:flex">
                 {% for article in headline_row %}
-                  <div class="card-deck">
+                 <div class="card-deck">
                 <div class="span4">
-                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
                     <div class="card-header ">
                             <img class="card-img-top" src={{ article.url_to_image }} alt="Card image cap" height="120px">
                         </div>
                         <div class="card-body">
-                                <p class="card-text"  style="font-size:80%; padding-left:5px">{{ article.title}}</p>
+                            <p class="card-text"  style="font-size:50%; padding-left:10px;padding-right:5px"><a href="{{article.url}} " style="color:#1b1c1c; text-decoration: none;">{{ article.title}}</a></p>
                         </div>
                     </div>
                 </div>
